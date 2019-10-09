@@ -1,0 +1,15 @@
+body{
+  text-align: center;
+}
+/* Header styles  */
+.main-header{
+
+}
+
+.main-nav {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.links a{
+  text-decoration: none;
+}
