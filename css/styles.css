@@ -1,15 +1,162 @@
-body{
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
+/* base style  */
+h1, h2, h3{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-size: 1.2em;
+}
+
+img{
+  width: 100%;
+
+}
+
+hr{
+  margin: 0 0;
+  color: #000;
+}
+
+/* layout container */
+
+.container{
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
+
+/* navigation style */
+.name a{
+  font-size: 1.8em;
+  display: inline-block;
+  padding: 0.5em 0;
+}
+.main-nav a{
+  display: inline-block;
+  padding: 10px 15px;
+
+}
+
+.navigation{
+  padding: 2em 0 1em;
+}
+
+.name,
+.main-nav li{
+  background: #fff;
+  margin-top: 6px;
+  margin-bottom: 6px;
+
+}
+
 /* Header styles  */
 .main-header{
+  text-align: center;
+  padding-bottom: 1em;
+  /* background-color: red; */
 
+}
+.main-header li{
+  background: #7599f7;
+}
+
+.name{
+  margin: 0;
+}
+.intro{
+  padding: 3.125em 0;
+}
+.title{
+  font-size: 2em;
+  padding: 1.6em 0;
+}
+.interest-examples{
+  font-size: 1.5em;
+}
+.links a{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:link, a:visited{
+  color: #0F394E;
 }
 
 .main-nav {
   list-style-type: none;
-  text-transform: uppercase;
+  margin: 0 1em;
+
+
 }
-.links a{
-  text-decoration: none;
+
+/* content styles */
+
+.examples{
+  margin-bottom: 10%;
+}
+figcaption{
+  padding-top: 5%;
+}
+
+.pf-pic{
+  border-radius: 10%;
+}
+.interest{
+  padding-bottom: 5%;
+}
+.wrap{
+  background: #EAf6f6;
+  margin-top: 0;
+}
+.email{
+  padding-bottom: 2em;
+}
+
+/* footer style */
+
+.main-footer{
+  display: block;
+
+}
+
+ .footer-name{
+  color: #0F394E;
+  float: left;
+}
+.footer-link{
+
+  float: right;
+}
+
+.footer-name,
+.footer-links{
+  display: inline-block;
+}
+
+/* clearfix */
+
+.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+  /* media queries */
+
+@media (min-width: 768px) {
+  .container{
+    width: 80%;
+    margin: 0 auto;
+    /* max-width: 1000px; will change it later */
+  }
+  .name,
+  .main-nav li{
+    display: inline;
+  }
+
 }
