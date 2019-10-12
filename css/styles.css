@@ -42,6 +42,13 @@ hr{
   padding: 10px 15px;
 
 }
+.name,
+.main-nav{
+
+}
+.main-nav li{
+  margin:0 5px;
+}
 
 .navigation{
   padding: 2em 0 1em;
@@ -149,14 +156,39 @@ figcaption{
   /* media queries */
 
 @media (min-width: 768px) {
+
   .container{
     width: 80%;
     margin: 0 auto;
     /* max-width: 1000px; will change it later */
   }
-  .name,
-  .main-nav li{
+
+  .name{
     display: inline;
+    float: left;
   }
+  .main-nav{
+    float: right;
+  }
+  .main-nav li{
+    float: left;
+  }
+  .name,
+  .main-nav,
+  .navigation,
+  .main-nav li {
+    display: inline-block;
+  }
+  .name{
+    font-size: 10px;
+    width: 320px;
+
+  }
+
+  .clearfix::after {
+  		content: " ";
+  		display: table;
+  		clear: both;
+  	}
 
 }
