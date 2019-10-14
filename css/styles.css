@@ -1,3 +1,6 @@
+body{
+  background: #EAf6f6;
+}
 * {
   box-sizing: border-box;
 }
@@ -8,7 +11,7 @@ h1, h2, h3 {
 }
 
 h3 {
-  margin: 0 0;
+  margin:  0;
 }
 
 p {
@@ -22,7 +25,7 @@ img {
 }
 
 hr {
-  margin: 0 0;
+  margin-bottom: 20px;
   color: #000;
 }
 
@@ -45,18 +48,15 @@ hr {
   padding: 10px 15px;
 }
 
-.name,
-.main-nav {}
-
 .main-nav li {
-  margin: 0 5px;
+  margin-right: 5px;
 }
 
 .navigation {
   padding: 2em 0 1em;
 }
 
-.name,
+
 .main-nav li {
   margin-top: 6px;
   margin-bottom: 6px;
@@ -126,15 +126,6 @@ figcaption {
   border-radius: 10%;
 }
 
-.interest {
-  /* padding-bottom: 3%; */
-}
-
-.wrap {
-  background: #EAf6f6;
-  margin-top: 0;
-}
-
 .email {
   padding-bottom: 2em;
 }
@@ -170,10 +161,15 @@ figcaption {
   clear: both;
 }
 
+.portfolio-work{
+  width: 100%;
+  background: #EDEDED;
+}
+
 /* media queries */
 @media (min-width: 768px) {
   .container {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     /* max-width: 1000px; will change it later */
   }
@@ -194,16 +190,11 @@ figcaption {
     margin-left: 0.5em;
   }
 
-  .right-side {
-    width: 50%;
+  .examples{
+    width: calc(100%/2);
     float: left;
     padding: 0 0.3em;
-  }
 
-  .left-side {
-    width: 50%;
-    float: left;
-    padding: 0 0.3em;
   }
 
   .port-text {
@@ -251,7 +242,38 @@ figcaption {
     float: left;
     margin: 0 5px;
   }
+
   .bottom-nav a:hover{
     color: #00F900;
   }
+}
+@media (min-width: 1024px) {
+  .container{
+    padding: 0;
+    width: 90%;
+
+  }
+  .name{
+    float: left;
+  }
+  .navigation,
+  .main-nav{
+    float: right;
+  }
+  .name{
+
+    font-size: 1em;
+  }
+
+  .name a,
+  .navigation{
+    display: inline-block;
+    padding: 0.9em 0;
+  }
+  .examples{
+    width: calc(100%/3);
+  }
+
+
+
 }
