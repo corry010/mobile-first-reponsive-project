@@ -38,7 +38,7 @@ hr {
 
 /* navigation style */
 .name a {
-  font-size: 1.8em;
+  font-size: 1em;
   display: inline-block;
   padding: 0.5em 0;
 }
@@ -183,17 +183,28 @@ figcaption {
     display: inline-block;
     text-align: center;
   }
+  .name a{
+    font-size: 1.8em;
+  }
 
   .pf-pic {
     width: 300px;
     float: right;
-    margin-left: 0.5em;
+    margin-left: 1em;
+  }
+
+  .intro-text{
+    text-align: left;
+  }
+  .title{
+    font-size: 2.5em;
   }
 
   .examples{
     width: calc(100%/2);
     float: left;
     padding: 0 0.3em;
+    height: 300px;
 
   }
 
@@ -219,7 +230,7 @@ figcaption {
   .video-game img {
     width: 250px;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 16px;
   }
 
   .interest-examples {
@@ -227,7 +238,7 @@ figcaption {
   }
 
   .title {
-    padding: 1em 0 0.5em;
+    padding: 1.5em 0 1em;
   }
 
   .bottom-nav {
@@ -251,18 +262,18 @@ figcaption {
   .container{
     padding: 0;
     width: 90%;
-
   }
-  .name{
+  .wrap{
+    max-width: 1200px;
+    margin: auto;
+  }
+  .name a{
     float: left;
+    font-size: 1.3em;
   }
   .navigation,
   .main-nav{
     float: right;
-  }
-  .name{
-
-    font-size: 1em;
   }
 
   .name a,
@@ -270,8 +281,12 @@ figcaption {
     display: inline-block;
     padding: 0.9em 0;
   }
+  .navigation{
+    padding-top: 2em;
+  }
   .examples{
     width: calc(100%/3);
+
   }
 
 
