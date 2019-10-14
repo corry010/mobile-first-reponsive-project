@@ -149,6 +149,9 @@ figcaption {
 .footer-link {
   display: inline-block;
 }
+.footer-link :hover{
+  color: #00F900;
+}
 
 .bottom-nav {
   display: none;
