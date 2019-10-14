@@ -1,194 +1,257 @@
 * {
   box-sizing: border-box;
 }
+
 /* base style  */
-h1, h2, h3{
+h1, h2, h3 {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-p{
+h3 {
+  margin: 0 0;
+}
+
+p {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   font-size: 1.2em;
 }
 
-img{
+img {
   width: 100%;
-
 }
 
-hr{
+hr {
   margin: 0 0;
   color: #000;
 }
 
 /* layout container */
-
-.container{
+.container {
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
-
 }
 
 /* navigation style */
-.name a{
+.name a {
   font-size: 1.8em;
   display: inline-block;
   padding: 0.5em 0;
 }
-.main-nav a{
+
+.main-nav a {
   display: inline-block;
   padding: 10px 15px;
-
 }
+
 .name,
-.main-nav{
+.main-nav {}
 
-}
-.main-nav li{
-  margin:0 5px;
+.main-nav li {
+  margin: 0 5px;
 }
 
-.navigation{
+.navigation {
   padding: 2em 0 1em;
 }
 
 .name,
-.main-nav li{
-  background: #fff;
+.main-nav li {
   margin-top: 6px;
   margin-bottom: 6px;
-
 }
 
 /* Header styles  */
-.main-header{
+.main-header {
   text-align: center;
   padding-bottom: 1em;
   /* background-color: red; */
-
 }
-.main-header li{
+
+.main-header li {
   background: #7599f7;
+  border-radius: 30px;
 }
 
-.name{
+.main-header li :hover {
+  background: #00ff00;
+  border-radius: 30px;
+}
+
+.name {
   margin: 0;
 }
-.intro{
+
+.intro {
   padding: 3.125em 0;
 }
-.title{
+
+.title {
+  margin: 0;
   font-size: 2em;
-  padding: 1.6em 0;
+  padding: 1.6em 0 1em;
 }
-.interest-examples{
+
+.interest-examples {
+  text-align: center;
   font-size: 1.5em;
+  padding: 1em 0;
 }
-.links a{
+
+.links a {
   text-decoration: none;
   text-transform: uppercase;
 }
-a:link, a:visited{
+
+a:link, a:visited {
   color: #0F394E;
 }
 
 .main-nav {
   list-style-type: none;
   margin: 0 1em;
-
-
 }
 
 /* content styles */
-
-.examples{
+.examples {
   margin-bottom: 10%;
 }
-figcaption{
+
+figcaption {
   padding-top: 5%;
 }
 
-.pf-pic{
+.pf-pic {
   border-radius: 10%;
 }
-.interest{
-  padding-bottom: 5%;
+
+.interest {
+  /* padding-bottom: 3%; */
 }
-.wrap{
+
+.wrap {
   background: #EAf6f6;
   margin-top: 0;
 }
-.email{
+
+.email {
   padding-bottom: 2em;
 }
 
 /* footer style */
-
-.main-footer{
-  display: block;
-
+.main-footer {
+  background-image: linear-gradient(to bottom right, red, yellow);
+  padding: 2em 1em;
 }
 
- .footer-name{
+.footer-name {
   color: #0F394E;
   float: left;
 }
-.footer-link{
 
+.footer-link {
   float: right;
 }
 
 .footer-name,
-.footer-links{
+.footer-link {
   display: inline-block;
 }
 
+.bottom-nav {
+  display: none;
+}
+
 /* clearfix */
-
 .clearfix::after {
-		content: " ";
-		display: table;
-		clear: both;
-	}
+  content: " ";
+  display: table;
+  clear: both;
+}
 
-  /* media queries */
-
+/* media queries */
 @media (min-width: 768px) {
-
-  .container{
-    width: 80%;
+  .container {
+    width: 95%;
     margin: 0 auto;
     /* max-width: 1000px; will change it later */
   }
 
-  .name{
-    display: inline;
-    float: left;
+  .footer-link {
+    display: none;
   }
-  .main-nav{
-    float: right;
-  }
-  .main-nav li{
-    float: left;
-  }
-  .name,
+
   .main-nav,
-  .navigation,
   .main-nav li {
     display: inline-block;
-  }
-  .name{
-    font-size: 10px;
-    width: 320px;
-
+    text-align: center;
   }
 
-  .clearfix::after {
-  		content: " ";
-  		display: table;
-  		clear: both;
-  	}
+  .pf-pic {
+    width: 300px;
+    float: right;
+    margin-left: 0.5em;
+  }
 
+  .right-side {
+    width: 50%;
+    float: left;
+    padding: 0 0.3em;
+  }
+
+  .left-side {
+    width: 50%;
+    float: left;
+    padding: 0 0.3em;
+  }
+
+  .port-text {
+    margin: 0 20px;
+  }
+
+  .video-game {
+    float: right;
+    margin-left: 5px;
+  }
+
+  .football {
+    float: left;
+  }
+
+  .football img {
+    width: 250px;
+    margin-right: 10px;
+    margin-top: 15px;
+  }
+
+  .video-game img {
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  .interest-examples {
+    padding: 20px 0;
+  }
+
+  .title {
+    padding: 1em 0 0.5em;
+  }
+
+  .bottom-nav {
+    display: inline-block;
+  }
+
+  .bottom-nav {
+    float: right;
+  }
+
+  .footer-nav li {
+    float: left;
+    margin: 0 5px;
+  }
+  .bottom-nav a:hover{
+    color: #00F900;
+  }
 }
